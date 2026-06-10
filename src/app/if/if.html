@@ -1,0 +1,10 @@
+<!--? Esto: -->
+<!-- <div *ngIf="isVisible; else elseBlock">Se ve locura</div> -->
+<!--? Es lo mismo que esto: -->
+<ng-template #elseBlock></ng-template>
+<ng-container>Contenido Visible </ng-container>
+@if (isVisible) {
+    <div>Se ve locura</div>
+} @else {
+    <span> Contenido Oculto </span>
+}

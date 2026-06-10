@@ -1,0 +1,12 @@
+<!--? Como se hacía antes: -->
+<!-- <ul>
+    <li *ngFor="let name of names; trackby">{{ name }}</li>
+</ul> -->
+<!--? Como se hace ahora: -->
+<ul>
+    @for(name of names; track name) {
+        <li>{{ name }}</li>
+    } @empty {
+        <li>No names</li>
+    }
+</ul>
