@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Defer } from "./defer/defer";
+import { Placeholder } from './placeholder/placeholder';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Placeholder],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

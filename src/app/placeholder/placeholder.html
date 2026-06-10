@@ -1,9 +1,10 @@
-@defer (when isImageVisible) {
+@defer (when isImageVisible()) {
     <img src="https://media.npr.org/assets/img/2023/01/14/this-is-fine_custom-dcb93e90c4e1548ffb16978a5a8d182270c872a9.jpg"
     alt="Differed Image"/>
-
+} @placeholder {
+    <p>While there's no content...</p>
 }
 
-@if (!isImageVisible) {
+@if (!isImageVisible()) {
     <button (click)="showImage()">See Image</button>
 }
