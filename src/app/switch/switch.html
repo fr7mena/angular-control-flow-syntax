@@ -1,0 +1,27 @@
+<!--? Así era anteriormente con el ngSwitch -->
+<!-- <div [ngSwitch]="selectedValue" >
+    <p *ngSwitchCase="'Option 1'">Option 1</p>
+    <p *ngSwitchCase="'Option 2'">Option 2</p>
+    <p *ngSwitchCase="'Option 3'">Option 3</p>
+    <p *ngSwitchCase="'Option 4'">Option 4</p>
+    <p *ngSwitchCase="'Option 5'">Option 5</p>
+</div> -->
+
+<!--? Así es ahora: !ES COMO SI FUERA PROGRAMACION DE TODA LA VIDA-->
+@switch (selectedValue) {
+    @case ("Option 1") {
+        <p>Option 1 selected</p>
+    }
+    @case ("Option 2") {
+        <p>Option 2 selected</p>
+    }
+    @case ("Option 3") {
+        <p>Option 3 selected</p>
+    }
+    @case ("Option 4") {
+        <p>Option 4 selected</p>
+    }
+    @case ("Option 5") {
+        <p>Option 5 selected</p>
+    }
+}
